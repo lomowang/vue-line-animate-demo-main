@@ -5,13 +5,15 @@
   const total = ref(5)
   // 跑動畫時間
   const animationDuration = 10
+  const active = ref(0)
+  const preactive = ref(0)
   
   // 輪播圖效果
   const img = function(n){
     return {
       backgroundImage:`url(https://picsum.photos/1920/1200?random=${n})`,
       animationDuration:`${animationDuration}s`,
-      animationDelay:`${(n-1)*animationDuration/2}s`
+      // animationDelay:`${(n-1)*animationDuration/2}s`
     }
   }
    
@@ -22,6 +24,11 @@
     scroll.value = (window.scrollY > 0)
   })
 
+  setInterval(function(){
+    preactive.value = active.value
+    active.value = (active.value + 1 +total.value) % total.value
+  },animationDuration/2*1000)
+
 
 </script>
 
@@ -30,7 +37,7 @@
     <!-- 輪播效應 -->
     <ul class="kvList">
       <!-- 輪播圖綁定 -->
-      <li v-for="n in total" :style="img(n)"></li>
+      <li v-for="n in total" :key="n" :style="img(n)" :class="{animate: active === n-1 || preactive === n-1}"></li>
     </ul>
   </div>
 
@@ -49,7 +56,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(113, 167, 162);
+    /* background-color: rgb(113, 167, 162); */
     
   }
   /* 輪播定位 */
@@ -58,7 +65,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: darkgray;
+    /* background-color: darkgray; */
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -66,6 +73,7 @@
   }
   
   .kvList > li{
+    opacity: 0;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -74,10 +82,10 @@
     background-size: 150% auto;
   }
 
-  .kvList > li{
+  .kvList > li.animate{
     animation-name: kvAnimate;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite; */
 
   }
 
