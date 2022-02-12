@@ -30,13 +30,11 @@
 <template>
 
 <!-- banner -->
+<h2 class="banText">SlowSpace</h2>
 <div class="banner">
-  SlowSpace
-  <ul>
-    <li class="coffee">coffee</li>
-    <li class="news">news</li>
-    <li class="about_us">about_us</li>
-  </ul>
+    <h2 class="banner1">coffee</h2>
+    <h2 class="banner2">news</h2>
+    <h2 class="banner3">about_us</h2>
 </div>
   <!-- 上半部 -->
   <div class="kv" :class="{scroll}">
@@ -82,11 +80,41 @@
     height: 200vh;
   }
 
+  
+
   .banner{
-    border: 1px solid black;
+    position: relative;
+    /* border: 1px solid black; */
     padding: 20px;
+    width: auto;
     display: flex;
+    left: 40%;
+    
+    /* justify-content: space-around; */
+    /* letter-spacing: 2px */
   }
+
+  .banner1{
+    margin-right: 10px;
+  }
+  .banner2{
+    margin-right: 10px;
+  }
+
+
+
+  .banText{
+   /* border: 1px solid black; */
+   position: absolute;
+   padding: 20px;
+   line-height: 30px;
+   letter-spacing: 2px;
+   /* display: flex;
+   flex-direction: column;
+   justify-content: center; */
+  }
+
+
   
   .slow{
     font-size: 80px;
@@ -97,6 +125,7 @@
     z-index: 2;
   }
   .slowSlogn1,.slowSlogn2{
+    
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -119,7 +148,7 @@
 
   .kv{
     position: relative;
-    width: 100vw;
+    ;
     height: 90vh;
     background-color: rgb(113, 167, 162);
     
