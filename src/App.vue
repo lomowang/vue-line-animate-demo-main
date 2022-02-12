@@ -4,22 +4,15 @@
   // 跑輪播圖
   const total = ref(5)
   // 跑動畫時間
-<<<<<<< HEAD
   const animationDuration = 5
   // const pic =("https://lh3.googleusercontent.com/Fn6ICyCIJKig-eCByJifxEgTce5idSCgA-CoJFjnIuukMgVeTjGWAgGz_JqPjL2AbbBYoApnzAHq-q8G1xknD3ATU6oeyIYse4Xtaye_pZNOPxadZ7lp3mZCCaAscoX2PJR7Q3tk6xka5taXCFK10j34ItnTY_9NTg6GkFKSbvjYmb-h2EcArQoOwrMLsMITRgreuK14fvpz7xAXzNmtrwOCM-0yC8nv-GJPiOzsmlxEiNlTcLcICeAVGRGMdVmARQrt5NNbnesRJOKenMnFw12mzBw5nRuw2Vg7AIuK2tGoSrNFjQZJ6Uy3aBIXg_L5KCgH9k_heN8PoWG5aKnLLM9VSrhhBIGzwE6HFp3lM_ixV-1zqPZt17t9juDrWeiBTr0ubACPPIcrLkHVbqvszrmZJwwnooGLxwU1AV39KGr9j6fjGfILQ09_gxEOXWrCWRQ_UAqumFlxVvpk7c1wnuHNSMFhNvfG7Y9Eo46z4MiDMlwgBlTFZttCqv-CSBJTqfDz1CbiyBMbmpkU0hHwAPG1p4F2yqW0hOxUiU6raxcBO2J6z1hkLeBBb1i3EZpoWi57AOlr-Zj8hc6yOmRv8RiUjapx7DNxr7aAvJf72hWKdADjO9ccVNEDlwtayQ6PNs9nhOTkAyN0Qzs3_HgMJu_8X2WtJONINTt9SHYOZtswK0v2k3CQgcOjfR0jyt9h--3wGuxRZ5ECRThwuh17N78=w870-h868-no?authuser=0")
 
-=======
-  const animationDuration = 10
-  const active = ref(0)
-  const preactive = ref(0)
-  
->>>>>>> 14bc199f41274b157c9af32fa1f24e152e4ccad5
   // 輪播圖效果
   const img = function(n){
     return {
       backgroundImage:`url(https://lh3.googleusercontent.com/HJxXj4T-L_R2_imLWB-c7KEWvAhLJOxbXmAODV7sS_entvp76IWUYMF5LZChIKy7K5vjHcS4DkHMl5pxKdR9KOMUJbaD4ecikCZ1OCcMzJgdnOIOhyTrNEqsR7_e2gRJPhGPnuaNS4Q7iMlEqOno-qZ0fD2gitFeUT2y7sWgkExNK7-iVq8N3UvvqcZaSrrNTeWyILX3r3jCA4y7nY7kPnSYSWkgcTrSyi0cUW8WIAP-K3WNgnBLME2HE0V1HUjsGSOOerTev0PJaZ_jO1gankfpcdUdYPY9Q-no1TVUwbCl5sAQYWyZcGXEtmkO7fW5IXgU847aZjzgJ0-uyyESfs7PRGzMpZbB499cXwynyleGM6WMP-PLempFoiyMAXQXH2u9yrJS3plCcb2pbLayhHCMD6y9Uj3rXkEKhuZJWV2ELHv2r9SqnJhsNYg1Yb4FZfDCDelk26AGV2c3H1rRZ-KZNa3r7bU4iZ28AHAP_ySImNvCdKbB5qH18baiwVv-CYnWx5b5D6beX2kHZRc5jQdu9_uLwoxEGFOq-AFEjNXByLqhyHbgDHB3az2JpttU63qmx7qXdB66UwB8ZUMbJnEX1JB4PlKEfPx96fHKYQ7XvpxyVAxsmSs3rZBNk_HhSKmAbAkld-nzeUp2fJKYMTcTbbw1un5VmuZ9GQAhcooFSoJ27IBuWeCSZPwkKfkj6LeZtixGD96UfpZR8ZC8wAk=w1147-h861-no?authuser=0${n})`,
       animationDuration:`${animationDuration}s`,
-      // animationDelay:`${(n-1)*animationDuration/2}s`
+      animationDelay:`${(n-1)*animationDuration/2}s`
     }
   }
    
@@ -30,11 +23,6 @@
     // 當滑動的Ｙ軸值大過0將會執行畫面縮放 
     scroll.value = (window.scrollY > 0)
   })
-
-  setInterval(function(){
-    preactive.value = active.value
-    active.value = (active.value + 1 +total.value) % total.value
-  },animationDuration/2*1000)
 
 
 </script>
@@ -53,12 +41,8 @@
     <!-- 輪播效應 -->
     <ul class="kvList">
       <!-- 輪播圖綁定 -->
-<<<<<<< HEAD
       <li v-for="n in total" :style="img(n)"></li>
       <li class="slow">SlowSpace 路漫慢</li>
-=======
-      <li v-for="n in total" :key="n" :style="img(n)" :class="{animate: active === n-1 || preactive === n-1}"></li>
->>>>>>> 14bc199f41274b157c9af32fa1f24e152e4ccad5
     </ul>
     <ul class="solwText">
       <li class="slowSlogn1">A Night Space In Pingtung</li>
@@ -69,7 +53,7 @@
 <!-- 中間 -->
   <div class="int">
     <ul>
-      <li>這邊</li>
+      <li>這邊i</li>
       <li>這邊</li>
       <li>這邊</li>
       <li>這邊</li>
@@ -164,15 +148,9 @@
 
   .kv{
     position: relative;
-<<<<<<< HEAD
     ;
     height: 90vh;
     background-color: rgb(113, 167, 162);
-=======
-    width: 100vw;
-    height: 100vh;
-    /* background-color: rgb(113, 167, 162); */
->>>>>>> 14bc199f41274b157c9af32fa1f24e152e4ccad5
     
   }
   /* 輪播定位 */
@@ -181,7 +159,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    /* background-color: darkgray; */
+    background-color: darkgray;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -189,7 +167,6 @@
   }
   
   .kvList > li{
-    opacity: 0;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -198,10 +175,10 @@
     background-size: 150% auto;
   }
 
-  .kvList > li.animate{
+  .kvList > li{
     animation-name: kvAnimate;
     animation-timing-function: linear;
-    /* animation-iteration-count: infinite; */
+    animation-iteration-count: infinite;
 
   }
 
