@@ -28,6 +28,16 @@
 </script>
 
 <template>
+
+<!-- banner -->
+<div class="banner">
+  SlowSpace
+  <ul>
+    <li class="coffee">coffee</li>
+    <li class="news">news</li>
+    <li class="about_us">about_us</li>
+  </ul>
+</div>
   <!-- 上半部 -->
   <div class="kv" :class="{scroll}">
     <!-- 輪播效應 -->
@@ -65,11 +75,19 @@
   *{
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   body{
     height: 200vh;
   }
+
+  .banner{
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+  }
+  
   .slow{
     font-size: 80px;
     top: 60%;
@@ -95,7 +113,7 @@
     
   }
   .slowSlogn2{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300px;
   }
 
@@ -135,9 +153,11 @@
 
   }
 
+  /* 滾輪下滑縮放 */
   .scroll .kvList{
     width: 1200px;
     height: 300px;
+    box-shadow: 0px 0px 35px rgba(95, 87, 87, 0.5);
   }
   
 
