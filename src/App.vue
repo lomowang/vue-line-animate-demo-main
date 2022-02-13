@@ -30,7 +30,10 @@
 <template>
 
 <!-- banner -->
-<h2 class="banText">SlowSpace</h2>
+
+<h2 class="banText" >
+  <img src="https://img.onl/miZoHD" class="slowLogo">
+</h2>
 <div class="banner">
     <h2 class="banner1">coffee</h2>
     <h2 class="banner2">news</h2>
@@ -58,10 +61,6 @@
       <li>這邊</li>
       <li>這邊</li>
     </ul>
-
-
-
-
   </div>
 
   
@@ -81,41 +80,58 @@
   }
 
   
-
   .banner{
     position: relative;
-    /* border: 1px solid black; */
-    padding: 20px;
+    padding: 50px;
     width: auto;
     display: flex;
     left: 40%;
-    
-    /* justify-content: space-around; */
-    /* letter-spacing: 2px */
+    cursor: pointer;
   }
 
   .banner1{
-    margin-right: 10px;
+    margin-right: 20px;
+    /* border-bottom:2px solid black ;
+    opacity: ; */
   }
+  .banner1:hover{
+    border-bottom:2px solid black ;
+    opacity: 1;
+  }
+  
   .banner2{
-    margin-right: 10px;
+    margin-right: 20px;
   }
-
-
-
-  .banText{
-   /* border: 1px solid black; */
-   position: absolute;
-   padding: 20px;
-   line-height: 30px;
-   letter-spacing: 2px;
-   /* display: flex;
-   flex-direction: column;
-   justify-content: center; */
+  .banner2:hover{
+    border-bottom:2px solid black ;
+    opacity: 1;
   }
-
+  .banner3:hover{
+    border-bottom:2px solid black ;
+    opacity: 1;
+  }
 
   
+    
+  .banText{
+  position: absolute;
+   width: 100px;
+   height: 100px;
+   left: 50px;
+   margin-top: 10px;
+   border-radius: 100%;
+
+  }
+  .slowLogo{
+    /* border: 1px solid black; */
+    display: flex;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 10px 5px 30px rgba(173, 169, 169, 0.5);
+
+  }
+
   .slow{
     font-size: 80px;
     top: 60%;
