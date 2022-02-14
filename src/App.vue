@@ -54,7 +54,7 @@
       <!-- <li class="slowText"> A Night Space In Pingtung</li> -->
   </div>
 <!-- 中間 -->
-  <div class="int">
+  <div class="products">
     <ul>
       <li>這邊i</li>
       <li>這邊</li>
@@ -86,16 +86,15 @@
     width: auto;
     display: flex;
     left: 40%;
-    cursor: pointer;
+    
   }
 
   .banner1{
     margin-right: 20px;
-    /* border-bottom:2px solid black ;
-    opacity: ; */
   }
   .banner1:hover{
     border-bottom:2px solid black ;
+    cursor: pointer;
     opacity: 1;
   }
   
@@ -104,10 +103,12 @@
   }
   .banner2:hover{
     border-bottom:2px solid black ;
+    cursor: pointer;
     opacity: 1;
   }
   .banner3:hover{
     border-bottom:2px solid black ;
+    cursor: pointer;
     opacity: 1;
   }
 
