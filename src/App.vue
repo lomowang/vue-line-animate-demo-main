@@ -35,9 +35,9 @@
   <img src="https://img.onl/miZoHD" class="slowLogo">
 </h2>
 <div class="banner">
-    <h2 class="banner1">coffee</h2>
-    <h2 class="banner2">news</h2>
-    <h2 class="banner3">about_us</h2>
+    <li class="banner1">coffee</li>
+    <li class="banner2">news</li>
+    <li class="banner3">about_us</li>
 </div>
   <!-- 上半部 -->
   <div class="kv" :class="{scroll}">
@@ -54,18 +54,135 @@
       <!-- <li class="slowText"> A Night Space In Pingtung</li> -->
   </div>
 <!-- 中間 -->
+
+<!-- 商品列 -->
+<div class="wrap">
   <div class="products">
-    <ul>
-      <li>這邊i</li>
-      <li>這邊</li>
-      <li>這邊</li>
-      <li>這邊</li>
-    </ul>
-  </div>
-
-  
-
-
+      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+        <!-- 放icon -->
+        <div class="icon">
+          <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
+          <img src="https://img.icons8.com/small/16/000000/add-shopping-cart.png"/>
+        </div>
+        <!-- <li class="color"></li> -->
+          <p class="shopInt">[晚安配方]-喝完可以睡
+            <br>250g
+            <br class="Price">NT$350元
+          </p>
+    </div>
+  <div class="products">
+      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+        <!-- 放icon -->
+        <div class="icon">
+          <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
+          <img src="https://img.icons8.com/small/16/000000/add-shopping-cart.png"/>
+        </div>
+        <!-- <li class="color"></li> -->
+          <p class="shopInt">[晚安配方]-喝完可以睡
+            <br>250g
+            <br class="Price">NT$350元
+          </p>
+    </div>
+  <div class="products">
+      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+        <!-- 放icon -->
+        <div class="icon">
+          <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
+          <img src="https://img.icons8.com/small/16/000000/add-shopping-cart.png"/>
+        </div>
+        <!-- <li class="color"></li> -->
+          <p class="shopInt">[晚安配方]-喝完可以睡
+            <br>250g
+            <br class="Price">NT$350元
+          </p>
+    </div>
+  <div class="products">
+      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+        <!-- 放icon -->
+        <div class="icon">
+          <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
+          <img src="https://img.icons8.com/small/16/000000/add-shopping-cart.png"/>
+        </div>
+        <!-- <li class="color"></li> -->
+          <p class="shopInt">[晚安配方]-喝完可以睡
+            <br>250g
+            <br class="Price">NT$350元
+          </p>
+    </div>
+</div>
+<div class="wrap">
+  <div class="products">
+      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+        <!-- 放icon -->
+        <div class="icon">
+          <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
+          <img src="https://img.icons8.com/small/16/000000/add-shopping-cart.png"/>
+        </div>
+        <!-- <li class="color"></li> -->
+          <p class="shopInt">[晚安配方]-喝完可以睡
+            <br>250g
+            <br class="Price">NT$350元
+          </p>
+    </div>
+  <div class="products">
+      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+        <!-- 放icon -->
+        <div class="icon">
+          <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
+          <img src="https://img.icons8.com/small/16/000000/add-shopping-cart.png"/>
+        </div>
+        <!-- <li class="color"></li> -->
+          <p class="shopInt">[晚安配方]-喝完可以睡
+            <br>250g
+            <br class="Price">NT$350元
+          </p>
+    </div>
+  <div class="products">
+      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+        <!-- 放icon -->
+        <div class="icon">
+          <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
+          <img src="https://img.icons8.com/small/16/000000/add-shopping-cart.png"/>
+        </div>
+        <!-- <li class="color"></li> -->
+          <p class="shopInt">[晚安配方]-喝完可以睡
+            <br>250g
+            <br class="Price">NT$350元
+          </p>
+    </div>
+  <div class="products">
+      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+        <!-- 放icon -->
+        <div class="icon">
+          <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
+          <img src="https://img.icons8.com/small/16/000000/add-shopping-cart.png"/>
+        </div>
+        <!-- <li class="color"></li> -->
+          <p class="shopInt">[晚安配方]-喝完可以睡
+            <br>250g
+            <br class="Price">NT$350元
+          </p>
+    </div>
+</div>
+<!-- footer -->
+<div class="footer">
+  <ul class="aboutus">關於我們
+    <li>品牌介紹</li>
+    <li>SlowSpace路漫慢</li>
+  </ul>
+  <ul class="sever">顧客服務
+    <li>聯絡我們</li>
+    <li>購物須知</li>
+    <li>會員分級</li>
+    <li>常見Ｑ＆Ａ</li>
+  </ul>
+  <ul class="time">營業時間
+    <li>週一至週二 18:00-00:00</li>
+    <li>週四至週日 18:-00:00</li>
+    <li>每週三公休</li>
+    <li>地址：900屏東縣屏東市上海路17號</li>
+  </ul>
+</div>
 </template>
 
 <style>
@@ -74,19 +191,24 @@
     padding: 0;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* border: 1px solid black; */
   }
   body{
-    height: 200vh;
+    height: 180vh;
+    /* width: 100%; */
   }
 
-  
   .banner{
-    position: relative;
+    /* position: relative; */
     padding: 50px;
     width: auto;
     display: flex;
-    left: 40%;
-    
+    /* left: -400%; */
+    /* right: 100px; */
+    /* padding-left:  */
+    justify-content: center;
+    list-style: none;
+    font-size: 40px;
   }
 
   .banner1{
@@ -111,11 +233,9 @@
     cursor: pointer;
     opacity: 1;
   }
-
-  
     
   .banText{
-  position: absolute;
+   position: absolute;
    width: 100px;
    height: 100px;
    left: 50px;
@@ -162,13 +282,93 @@
     font-size: 14px;
     font-weight: 300px;
   }
+  .wrap{
+    position: relative;
+    display: inline-flex;
+    padding-bottom: 40px;
+    /* background-color: #eee; */
+    /* border: 1px solid black; */
+    width: 100%;
+    z-index: 0;
+  }
+  .products{
+    
+    margin: 2px;
+    padding: 10px;
+    
+  }
+  .icon{
+    position: absolute;
+    bottom: 15%;
+    left: -70px;
+    top: 75%;
+    z-index: 10;
+    justify-content: center;
+  }
+  /* .color{
+    position: absolute;
+    background-color: #fff;
+    bottom: 15%;
+    left: 20%;
+    width: 74px;
+    height: 20px;
+    list-style: none;
+  } */
+  .shopInt{
+    width: auto;
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .footer{
+    /* width: 100%; */
+    display: flex;
+    padding-top: 0;
+    padding: 80px;
+    /* margin: 0px; */
+    border: 1px solid black;
+    justify-content: center;
+
+    list-style: none;
+    /* padding-left: 5px;
+    padding-right: 5px; */
+    /* margin-right: 10px; */
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    color: #eee;
+    border: 1px solid white;
+    padding: 100px;
+
+  }
+  .aboutus{
+     list-style: none;
+     font-size: 20px;
+     padding-right: 200px;
+  }
+  .sever{
+     list-style: none;
+     font-size: 20px;
+     padding-right: 200px;
+
+  }
+  .time{
+     list-style: none;
+     font-size: 20px;
+     padding-right: 200px;
+
+  }
+
+
+
+
+ 
+
+
+
 
   .kv{
     position: relative;
-    ;
     height: 90vh;
     background-color: rgb(113, 167, 162);
-    
   }
   /* 輪播定位 */
   .kvList{
