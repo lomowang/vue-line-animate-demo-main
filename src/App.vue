@@ -58,7 +58,7 @@
 <!-- 商品列 -->
 <div class="wrap">
   <div class="products">
-      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+      <img src="https://picsum.photos/400/300?random=28" class="shop1">
         <!-- 放icon -->
         <div class="icon">
           <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
@@ -71,7 +71,7 @@
           </p>
     </div>
   <div class="products">
-      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+      <img src="https://picsum.photos/400/300?random=20" class="shop1">
         <!-- 放icon -->
         <div class="icon">
           <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
@@ -84,7 +84,7 @@
           </p>
     </div>
   <div class="products">
-      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+      <img src="https://picsum.photos/400/300?random=44" class="shop1">
         <!-- 放icon -->
         <div class="icon">
           <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
@@ -97,7 +97,7 @@
           </p>
     </div>
   <div class="products">
-      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+      <img src="https://picsum.photos/400/300?random=14" class="shop1">
         <!-- 放icon -->
         <div class="icon">
           <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
@@ -112,7 +112,7 @@
 </div>
 <div class="wrap">
   <div class="products">
-      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+      <img src="https://picsum.photos/400/300?random=94" class="shop1">
         <!-- 放icon -->
         <div class="icon">
           <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
@@ -125,7 +125,7 @@
           </p>
     </div>
   <div class="products">
-      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+      <img src="https://picsum.photos/400/300?random=90" class="shop1">
         <!-- 放icon -->
         <div class="icon">
           <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
@@ -138,7 +138,7 @@
           </p>
     </div>
   <div class="products">
-      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+      <img src="https://picsum.photos/400/300?random=55" class="shop1">
         <!-- 放icon -->
         <div class="icon">
           <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
@@ -151,7 +151,7 @@
           </p>
     </div>
   <div class="products">
-      <img src="https://picsum.photos/seed/picsum/400/300" class="shop1">
+      <img src="https://picsum.photos/400/300?random=16" class="shop1">
         <!-- 放icon -->
         <div class="icon">
           <img src="https://img.icons8.com/small/16/000000/hearts.png"/>
@@ -356,15 +356,6 @@
      padding-right: 200px;
 
   }
-
-
-
-
- 
-
-
-
-
   .kv{
     position: relative;
     height: 90vh;
